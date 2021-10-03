@@ -1,0 +1,159 @@
+@font-face
+{
+	font-family: "Glacial Indifference";
+	src: url('font/GlacialIndifference-Regular.otf');
+	src: url('font/GlacialIndifference-Regular.otf') format('truetype');
+}
+
+body
+{
+	background-image: url("images/fond.jpg");
+	background-attachment: fixed;
+	background-position: top;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	color: white;
+	background-color: black;
+}
+
+h1
+{
+	font-family: "Glacial Indifference";
+	text-align: center;
+}
+
+footer
+{
+	color: white;
+	text-align: center;
+}
+
+/*Petite ligne qui entoure les titres*/
+h1:before, h1:after
+{
+	content: ''; 
+	display: inline-block; 
+	vertical-align: middle; 
+	width: 4%; 
+	height: 1px; 
+	background: red;
+}
+
+h1:after
+{
+	margin-left: 20px;
+}
+
+h1:before
+{
+	margin-right: 20px;
+}
+
+#contact
+{
+	background-color: #1c1616;
+}
+
+#resumes
+{
+	text-align: justify;
+}
+
+#forum, #lieux_tournage, #resumes
+{
+	margin-left: 18px;
+	margin-right: 18px;
+}
+
+#bouton_validation
+{
+	display: flex;	
+	justify-content: center;
+}
+
+/*Conteneur principal*/
+#contenu_page
+{
+	max-width: 1062px;
+	margin: auto;
+}
+
+.resume_saison
+{
+	border: 2px solid red;
+	border-radius: 30px 30px 30px 30px;
+	box-shadow: 1px 1px 1px 1px red;
+}
+
+/*Les titres des carousels*/
+.carousel-content {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    width: 100%;
+}
+
+.titre_marge
+{
+	margin-left: 18px;
+}
+
+.texte_saison
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	color: red;
+	font-weight: bold;
+	font-size: 1.2em;
+	text-decoration: underline;
+}
+
+.description_titre
+{
+	font-style: italic;
+	opacity: 0.5;
+}
+
+.card-text
+{
+	color: black;
+}
+
+.card
+{
+	opacity: 0.85;
+}
+
+#titre_cache
+{
+	display: none;
+}
+
+.img_forum
+{
+	width: 70px;
+}
+
+.test
+{
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 698px)
+{
+	#presentation_persos div div h1
+	{
+		display: none;
+	}
+
+	#titre_cache
+	{
+		display: block;
+	}
+}
